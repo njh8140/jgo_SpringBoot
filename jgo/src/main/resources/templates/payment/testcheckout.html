@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://static.toss.im/icons/png/4x/icon-toss-logo.png" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>결제 페이지</title>
+    <script src="https://js.tosspayments.com/v2/standard"></script>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="box_section" style="padding: 40px 30px 50px 30px; margin-top: 30px; margin-bottom: 50px">
+        <h1>일반 결제</h1>
+        <div id="payment-method" style="display: flex">
+            <button id="CARD" class="button2" onclick="selectPaymentMethod('CARD')">카드</button>
+            <button id="TRANSFER" class="button2" onclick="selectPaymentMethod('TRANSFER')">계좌이체</button>
+            <button id="VIRTUAL_ACCOUNT" class="button2" onclick="selectPaymentMethod('VIRTUAL_ACCOUNT')">가상계좌</button>
+            <button id="MOBILE_PHONE" class="button2" onclick="selectPaymentMethod('MOBILE_PHONE')">휴대폰</button>
+            <button id="CULTURE_GIFT_CERTIFICATE" class="button2" onclick="selectPaymentMethod('CULTURE_GIFT_CERTIFICATE')">문화상품권</button>
+            <button id="FOREIGN_EASY_PAY" class="button2" onclick="selectPaymentMethod('FOREIGN_EASY_PAY')">해외간편결제</button>
+        </div>
+        <button class="button" style="margin-top: 30px" onclick="requestPayment()">결제하기</button>
+    </div>
+    
+    <div class="box_section" style="padding: 40px 30px 50px 30px; margin-top: 30px; margin-bottom: 50px">
+        <h1>정기 결제</h1>
+        <button class="button" style="margin-top: 30px" onclick="requestBillingAuth()">빌링키 발급하기</button>
+    </div>
+</div>
+
+<script>
+    const amount = {
+      currency: "KRW",
+      value: '${dashboard.pPrice}'
+    };
+	
+	let selectedPaymentMethod = null;
+	
+	function selectPaymentMethod(method) {
+	  if (selectedPaymentMethod !== null) {
+	    document.getElementById(selectedPaymentMethod).style.backgroundColor = "#ffffff"; // 이전 선택된 버튼의 배경색을 원래대로
+	  }
+
+	  selectedPaymentMethod = method; // 새로운 결제 방법 선택
+	  document.getElementById(selectedPaymentMethod).style.backgroundColor = "rgb(229 239 255)"; // 선택된 버튼의 배경색을 변경
+	}
+	
+    const customerKey = "${member.mno}";  // Member 엔티티에서 고객 고유 ID
+    const customerName = "${member.id}";  // Member 엔티티에서 고객 이름 (현재 id 사용)
+    const customerEmail = "${member.email}";  // Member 엔티티에서 고객 이메일
+    const customerPhone = "${member.phoneno}";  // Member 엔티티에서 고객 전화번호
+
+    const tossPayments = TossPayments("${clientKey}");
+
+	let payment = tossPayments.payment({
+	  customerKey,
+	})
+
+    async function requestPayment() {
+      switch (selectedPaymentMethod) {
+        case "CARD":
+          await payment.requestPayment({
+            method: "CARD",
+            amount,
+            orderId: generateRandomString(),
+            orderName: "${dashboard.subject}",  // Dashboard 엔티티에서 상품명 가져오기
+            successUrl: window.location.origin + "/payment/success.html",
+            failUrl: window.location.origin + "/fail.html",
+            customerEmail,
+            customerName,
+            customerMobilePhone: customerPhone,  // 고객의 전화번호
+          });
+		  break;
+        case "TRANSFER":
+          await payment.requestPayment({
+            method: "TRANSFER",
+            amount,
+            orderId: generateRandomString(),
+            orderName: "${dashboard.subject}",
+            successUrl: window.location.origin + "/payment/success.html",
+            failUrl: window.location.origin + "/fail.html",
+            customerEmail,
+            customerName,
+          });
+		  break;
+        case "VIRTUAL_ACCOUNT":
+          await payment.requestPayment({
+            method: "VIRTUAL_ACCOUNT",
+            amount,
+            orderId: generateRandomString(),
+            orderName: "${dashboard.subject}",
+            successUrl: window.location.origin + "/payment/success.html",
+            failUrl: window.location.origin + "/fail.html",
+            customerEmail,
+            customerName,
+          });
+		  break;
+        case "MOBILE_PHONE":
+          await payment.requestPayment({
+            method: "MOBILE_PHONE",
+            amount,
+            orderId: generateRandomString(),
+            orderName: "${dashboard.subject}",
+            successUrl: window.location.origin + "/payment/success.html",
+            failUrl: window.location.origin + "/fail.html",
+            customerEmail,
+            customerName,
+          });
+		  break;
+        case "CULTURE_GIFT_CERTIFICATE":
+          await payment.requestPayment({
+            method: "CULTURE_GIFT_CERTIFICATE",
+            amount,
+            orderId: generateRandomString(),
+            orderName: "${dashboard.subject}",
+            successUrl: window.location.origin + "/payment/success.html",
+            failUrl: window.location.origin + "/fail.html",
+            customerEmail,
+            customerName,
+          });
+		  break;
+        case "FOREIGN_EASY_PAY":
+          await payment.requestPayment({
+            method: "FOREIGN_EASY_PAY",
+            amount: {
+              value: 100,
+              currency: "USD",
+            },
+            orderId: generateRandomString(),
+            orderName: "${dashboard.subject}",
+            successUrl: window.location.origin + "/payment/success.html",
+            failUrl: window.location.origin + "/fail.html",
+            customerEmail,
+            customerName,
+            foreignEasyPay: {
+              provider: "PAYPAL",
+              country: "KR",
+            },
+          });
+		  break;
+      }
+    }
+
+    async function requestBillingAuth() {
+      await payment.requestBillingAuth({
+        method: "CARD",
+        successUrl: window.location.origin + "/payment/billing.html",
+        failUrl: window.location.origin + "/fail.html",
+        customerEmail,
+        customerName,
+      });
+    }
+
+    function generateRandomString() {
+      return window.btoa(Math.random()).slice(0, 20);
+    }
+</script>
+</body>
+</html>

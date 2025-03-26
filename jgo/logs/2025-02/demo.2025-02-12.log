@@ -1,0 +1,395 @@
+[20250212 16:10:24:296][INFO ][o.h.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+[20250212 16:10:24:387][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 8224 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250212 16:10:24:388][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250212 16:10:24:806][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20250212 16:10:24:806][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20250212 16:10:25:825][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250212 16:10:25:898][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface.
+[20250212 16:10:27:061][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[20250212 16:10:27:080][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[20250212 16:10:27:083][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20250212 16:10:27:084][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.34]
+[20250212 16:10:27:176][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20250212 16:10:27:178][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 2370 ms
+[20250212 16:10:27:580][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20250212 16:10:27:871][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.5.Final
+[20250212 16:10:28:012][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20250212 16:10:28:368][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20250212 16:10:28:405][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20250212 16:10:28:666][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection conn0: url=jdbc:h2:~/jgo user=SA
+[20250212 16:10:28:669][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20250212 16:10:28:696][WARN ][org.hibernate.orm.deprecation] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20250212 16:10:28:720][INFO ][org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[20250212 16:10:29:662][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20250212 16:10:29:721][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20250212 16:10:30:130][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20250212 16:10:30:161][INFO ][o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name memberSecurityService
+[20250212 16:10:30:320][WARN ][o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Injection of autowired dependencies failed
+[20250212 16:10:30:321][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[20250212 16:10:30:326][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[20250212 16:10:30:538][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[20250212 16:10:30:541][INFO ][o.apache.catalina.core.StandardService] Stopping service [Tomcat]
+[20250212 16:10:30:554][INFO ][o.s.b.a.l.ConditionEvaluationReportLogger] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[20250212 16:10:30:576][ERROR][o.springframework.boot.SpringApplication] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:515)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.mysite.jgo.JgoApplication.main(JgoApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.RuntimeException: Could not postProcess org.springframework.security.config.annotation.web.builders.WebSecurity@56206771 of type class org.springframework.security.config.annotation.web.builders.WebSecurity
+	at org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor.postProcess(AutowireBeanFactoryObjectPostProcessor.java:71)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.setFilterChainProxySecurityConfigurer(WebSecurityConfiguration.java:145)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:854)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	... 22 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospectorRequestTransformer': Cannot resolve reference to bean 'mvcHandlerMappingIntrospector' while setting constructor argument
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:691)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:206)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:224)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1489)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1450)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$1.getIfUnique(DefaultListableBeanFactory.java:468)
+	at org.springframework.security.config.annotation.web.builders.WebSecurity.setApplicationContext(WebSecurity.java:428)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:110)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:85)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:423)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:413)
+	at org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor.initializeBeanIfNeeded(AutowireBeanFactoryObjectPostProcessor.java:98)
+	at org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor.postProcess(AutowireBeanFactoryObjectPostProcessor.java:67)
+	... 28 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'mainController' method 
+com.mysite.jgo.MainController#root()
+to {GET [/]}: There is already 'paymentController' bean method
+com.mysite.jgo.controller.PaymentController#index() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 51 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'mainController' method 
+com.mysite.jgo.MainController#root()
+to {GET [/]}: There is already 'paymentController' bean method
+com.mysite.jgo.controller.PaymentController#index() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:695)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1426)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:368)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.initHandlerMappings(HandlerMappingIntrospector.java:135)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.afterPropertiesSet(HandlerMappingIntrospector.java:123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 58 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'mainController' method 
+com.mysite.jgo.MainController#root()
+to {GET [/]}: There is already 'paymentController' bean method
+com.mysite.jgo.controller.PaymentController#index() mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:675)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:509)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:84)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:986)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:239)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 71 common frames omitted
+[20250212 16:18:34:181][INFO ][o.h.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+[20250212 16:18:34:233][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 8732 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250212 16:18:34:234][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250212 16:18:34:532][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20250212 16:18:34:533][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20250212 16:18:35:345][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250212 16:18:35:413][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interface.
+[20250212 16:18:36:211][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[20250212 16:18:36:226][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[20250212 16:18:36:228][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20250212 16:18:36:229][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.34]
+[20250212 16:18:36:291][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20250212 16:18:36:291][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1757 ms
+[20250212 16:18:36:475][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20250212 16:18:36:540][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.5.Final
+[20250212 16:18:36:580][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20250212 16:18:36:897][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20250212 16:18:36:935][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20250212 16:18:37:245][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection conn0: url=jdbc:h2:~/jgo user=SA
+[20250212 16:18:37:247][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20250212 16:18:37:280][WARN ][org.hibernate.orm.deprecation] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20250212 16:18:37:313][INFO ][org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[20250212 16:18:38:402][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20250212 16:18:38:460][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20250212 16:18:38:875][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20250212 16:18:38:909][INFO ][o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name memberSecurityService
+[20250212 16:18:39:573][INFO ][o.s.b.a.h2.H2ConsoleAutoConfiguration] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/jgo'
+[20250212 16:18:39:656][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20250212 16:18:39:680][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[20250212 16:18:39:711][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[20250212 16:18:39:722][INFO ][com.mysite.jgo.JgoApplication] Started JgoApplication in 6.131 seconds (process running for 7.002)
+[20250212 16:18:49:462][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[20250212 16:18:49:463][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[20250212 16:18:49:465][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 2 ms
+[20250212 16:22:07:816][INFO ][o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] Application shutdown requested.
+[20250212 16:22:07:820][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+[20250212 16:22:07:822][INFO ][o.apache.coyote.http11.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-8080"]
+[20250212 16:22:07:828][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+[20250212 16:22:07:829][INFO ][o.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[20250212 16:22:07:834][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[20250212 16:22:07:838][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[20250212 16:22:07:844][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[20250212 16:36:53:053][INFO ][o.h.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+[20250212 16:36:53:107][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 12220 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250212 16:36:53:109][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250212 16:36:53:412][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20250212 16:36:53:412][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20250212 16:36:54:245][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250212 16:36:54:312][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+[20250212 16:36:55:072][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[20250212 16:36:55:090][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[20250212 16:36:55:093][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20250212 16:36:55:094][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.34]
+[20250212 16:36:55:269][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20250212 16:36:55:274][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1861 ms
+[20250212 16:36:55:700][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20250212 16:36:55:787][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.5.Final
+[20250212 16:36:55:835][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20250212 16:36:56:171][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20250212 16:36:56:206][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20250212 16:36:56:475][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection conn0: url=jdbc:h2:~/jgo user=SA
+[20250212 16:36:56:477][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20250212 16:36:56:507][WARN ][org.hibernate.orm.deprecation] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20250212 16:36:56:534][INFO ][org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[20250212 16:36:57:483][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20250212 16:36:57:543][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20250212 16:36:57:964][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20250212 16:36:57:996][INFO ][o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name memberSecurityService
+[20250212 16:36:58:670][INFO ][o.s.b.a.h2.H2ConsoleAutoConfiguration] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/jgo'
+[20250212 16:36:58:756][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20250212 16:36:58:779][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[20250212 16:36:58:803][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[20250212 16:36:58:812][INFO ][com.mysite.jgo.JgoApplication] Started JgoApplication in 6.44 seconds (process running for 8.381)
+[20250212 16:37:08:396][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[20250212 16:37:08:396][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[20250212 16:37:08:399][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 3 ms
+[20250212 16:58:51:807][INFO ][o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[20250212 16:58:51:817][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+[20250212 16:58:51:820][INFO ][o.apache.coyote.http11.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-8080"]
+[20250212 16:58:51:832][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+[20250212 16:58:51:833][INFO ][o.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[20250212 16:58:51:839][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[20250212 16:58:51:844][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[20250212 16:58:51:850][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[20250212 16:58:51:975][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 12220 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250212 16:58:51:975][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250212 16:58:52:230][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250212 16:58:52:240][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+[20250212 16:58:52:433][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[20250212 16:58:52:437][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[20250212 16:58:52:438][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20250212 16:58:52:438][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.34]
+[20250212 16:58:52:476][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20250212 16:58:52:476][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 493 ms
+[20250212 16:58:52:580][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20250212 16:58:52:584][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20250212 16:58:52:600][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20250212 16:58:52:602][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-2 - Starting...
+[20250212 16:58:52:622][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-2 - Added connection conn10: url=jdbc:h2:~/jgo user=SA
+[20250212 16:58:52:623][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-2 - Start completed.
+[20250212 16:58:52:624][WARN ][org.hibernate.orm.deprecation] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20250212 16:58:52:625][INFO ][org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[20250212 16:58:52:692][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20250212 16:58:52:695][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20250212 16:58:52:807][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20250212 16:58:52:831][INFO ][o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name memberSecurityService
+[20250212 16:58:53:192][INFO ][o.s.b.a.h2.H2ConsoleAutoConfiguration] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/jgo'
+[20250212 16:58:53:228][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20250212 16:58:53:242][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[20250212 16:58:53:246][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[20250212 16:58:53:257][INFO ][com.mysite.jgo.JgoApplication] Started JgoApplication in 1.327 seconds (process running for 1322.825)
+[20250212 16:58:53:264][INFO ][o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
+[20250212 16:58:56:253][INFO ][o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] Application shutdown requested.
+[20250212 16:58:56:256][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+[20250212 16:58:56:257][INFO ][o.apache.coyote.http11.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-8080"]
+[20250212 16:58:56:261][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+[20250212 16:58:56:262][INFO ][o.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[20250212 16:58:56:265][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[20250212 16:58:56:266][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-2 - Shutdown initiated...
+[20250212 16:58:56:312][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-2 - Shutdown completed.
+[20250212 16:59:01:902][INFO ][o.h.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+[20250212 16:59:01:961][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 1292 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250212 16:59:01:963][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250212 16:59:02:255][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20250212 16:59:02:255][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20250212 16:59:03:067][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250212 16:59:03:132][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interface.
+[20250212 16:59:03:848][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[20250212 16:59:03:864][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[20250212 16:59:03:867][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20250212 16:59:03:867][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.34]
+[20250212 16:59:03:930][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20250212 16:59:03:931][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1675 ms
+[20250212 16:59:04:128][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20250212 16:59:04:195][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.5.Final
+[20250212 16:59:04:242][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20250212 16:59:04:554][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20250212 16:59:04:588][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20250212 16:59:04:847][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection conn0: url=jdbc:h2:~/jgo user=SA
+[20250212 16:59:04:850][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20250212 16:59:04:878][WARN ][org.hibernate.orm.deprecation] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20250212 16:59:04:903][INFO ][org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[20250212 16:59:05:838][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20250212 16:59:05:897][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20250212 16:59:06:314][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20250212 16:59:06:346][INFO ][o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name memberSecurityService
+[20250212 16:59:06:999][INFO ][o.s.b.a.h2.H2ConsoleAutoConfiguration] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/jgo'
+[20250212 16:59:07:084][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20250212 16:59:07:108][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[20250212 16:59:07:130][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[20250212 16:59:07:139][INFO ][com.mysite.jgo.JgoApplication] Started JgoApplication in 5.79 seconds (process running for 6.662)
+[20250212 16:59:20:213][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[20250212 16:59:20:214][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[20250212 16:59:20:216][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 2 ms
+[20250212 17:22:57:700][INFO ][o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] Application shutdown requested.
+[20250212 17:22:57:707][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+[20250212 17:22:57:709][INFO ][o.apache.coyote.http11.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-8080"]
+[20250212 17:22:57:717][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+[20250212 17:22:57:718][INFO ][o.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[20250212 17:22:57:726][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[20250212 17:22:57:731][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[20250212 17:22:57:787][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[20250212 17:24:07:353][INFO ][o.h.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+[20250212 17:24:07:409][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 8432 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250212 17:24:07:411][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250212 17:24:07:727][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20250212 17:24:07:728][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20250212 17:24:08:752][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250212 17:24:08:836][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interface.
+[20250212 17:24:10:036][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 4000 (http)
+[20250212 17:24:10:062][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-4000"]
+[20250212 17:24:10:067][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20250212 17:24:10:069][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.34]
+[20250212 17:24:10:209][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20250212 17:24:10:215][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 2485 ms
+[20250212 17:24:10:773][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20250212 17:24:10:927][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.5.Final
+[20250212 17:24:10:994][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20250212 17:24:11:433][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20250212 17:24:11:475][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20250212 17:24:11:860][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection conn0: url=jdbc:h2:~/jgo user=SA
+[20250212 17:24:11:863][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20250212 17:24:11:908][WARN ][org.hibernate.orm.deprecation] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20250212 17:24:11:937][INFO ][org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[20250212 17:24:12:979][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20250212 17:24:13:053][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20250212 17:24:13:496][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20250212 17:24:13:536][INFO ][o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name memberSecurityService
+[20250212 17:24:14:258][INFO ][o.s.b.a.h2.H2ConsoleAutoConfiguration] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/jgo'
+[20250212 17:24:14:355][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20250212 17:24:14:380][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-4000"]
+[20250212 17:24:14:404][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 4000 (http) with context path '/'
+[20250212 17:24:14:414][INFO ][com.mysite.jgo.JgoApplication] Started JgoApplication in 7.716 seconds (process running for 8.777)
+[20250212 17:24:24:393][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[20250212 17:24:24:393][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[20250212 17:24:24:395][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 2 ms
+[20250212 17:31:14:176][INFO ][o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[20250212 17:31:14:189][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+[20250212 17:31:14:191][INFO ][o.apache.coyote.http11.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-4000"]
+[20250212 17:31:14:205][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+[20250212 17:31:14:209][INFO ][o.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-4000"]
+[20250212 17:31:14:217][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[20250212 17:31:14:220][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[20250212 17:31:14:253][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[20250212 17:31:14:458][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 8432 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250212 17:31:14:459][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250212 17:31:15:471][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250212 17:31:15:527][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interface.

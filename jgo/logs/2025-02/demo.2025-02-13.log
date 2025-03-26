@@ -1,0 +1,725 @@
+[20250213 08:53:23:378][INFO ][o.h.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+[20250213 08:53:23:443][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 2372 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250213 08:53:23:445][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250213 08:53:23:772][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20250213 08:53:23:773][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20250213 08:53:24:661][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250213 08:53:24:730][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interface.
+[20250213 08:53:25:515][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[20250213 08:53:25:532][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[20250213 08:53:25:536][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20250213 08:53:25:536][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.34]
+[20250213 08:53:25:601][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20250213 08:53:25:602][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1827 ms
+[20250213 08:53:25:825][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20250213 08:53:25:920][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.5.Final
+[20250213 08:53:25:969][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20250213 08:53:26:340][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20250213 08:53:26:382][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20250213 08:53:26:676][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection conn0: url=jdbc:h2:~/jgo user=SA
+[20250213 08:53:26:678][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20250213 08:53:26:713][WARN ][org.hibernate.orm.deprecation] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20250213 08:53:26:741][INFO ][org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[20250213 08:53:27:767][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20250213 08:53:27:846][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20250213 08:53:28:302][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20250213 08:53:28:335][INFO ][o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name memberSecurityService
+[20250213 08:53:29:047][INFO ][o.s.b.a.h2.H2ConsoleAutoConfiguration] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/jgo'
+[20250213 08:53:29:129][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20250213 08:53:29:154][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[20250213 08:53:29:176][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[20250213 08:53:29:188][INFO ][com.mysite.jgo.JgoApplication] Started JgoApplication in 6.476 seconds (process running for 10.003)
+[20250213 08:53:38:509][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[20250213 08:53:38:510][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[20250213 08:53:38:511][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+[20250213 09:00:18:883][INFO ][o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[20250213 09:00:18:889][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+[20250213 09:00:18:890][INFO ][o.apache.coyote.http11.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-8080"]
+[20250213 09:00:18:897][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+[20250213 09:00:18:899][INFO ][o.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[20250213 09:00:18:904][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[20250213 09:00:18:908][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[20250213 09:00:18:940][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[20250213 09:00:19:070][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 2372 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250213 09:00:19:071][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250213 09:00:19:333][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250213 09:00:19:342][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+[20250213 09:00:19:544][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[20250213 09:00:19:549][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[20250213 09:00:19:549][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20250213 09:00:19:549][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.34]
+[20250213 09:00:19:576][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20250213 09:00:19:577][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 499 ms
+[20250213 09:00:19:657][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20250213 09:00:19:662][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20250213 09:00:19:673][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20250213 09:00:19:675][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-2 - Starting...
+[20250213 09:00:19:698][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-2 - Added connection conn10: url=jdbc:h2:~/jgo user=SA
+[20250213 09:00:19:700][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-2 - Start completed.
+[20250213 09:00:19:700][WARN ][org.hibernate.orm.deprecation] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20250213 09:00:19:702][INFO ][org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[20250213 09:00:19:757][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20250213 09:00:19:759][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20250213 09:00:19:904][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20250213 09:00:19:922][INFO ][o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name memberSecurityService
+[20250213 09:00:20:259][INFO ][o.s.b.a.h2.H2ConsoleAutoConfiguration] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/jgo'
+[20250213 09:00:20:315][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20250213 09:00:20:332][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[20250213 09:00:20:336][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[20250213 09:00:20:344][INFO ][com.mysite.jgo.JgoApplication] Started JgoApplication in 1.323 seconds (process running for 421.159)
+[20250213 09:00:20:348][INFO ][o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
+[20250213 09:00:21:181][INFO ][o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] Application shutdown requested.
+[20250213 09:00:21:182][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+[20250213 09:00:21:183][INFO ][o.apache.coyote.http11.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-8080"]
+[20250213 09:00:21:187][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+[20250213 09:00:21:188][INFO ][o.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[20250213 09:00:21:191][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[20250213 09:00:21:192][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-2 - Shutdown initiated...
+[20250213 09:00:21:234][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-2 - Shutdown completed.
+[20250213 09:59:49:583][INFO ][o.h.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+[20250213 09:59:49:644][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 12236 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250213 09:59:49:647][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250213 09:59:49:933][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20250213 09:59:49:933][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20250213 09:59:50:812][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250213 09:59:50:876][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interface.
+[20250213 09:59:51:618][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[20250213 09:59:51:634][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[20250213 09:59:51:637][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20250213 09:59:51:638][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.34]
+[20250213 09:59:51:698][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20250213 09:59:51:699][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1764 ms
+[20250213 09:59:51:912][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20250213 09:59:51:989][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.5.Final
+[20250213 09:59:52:035][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20250213 09:59:52:351][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20250213 09:59:52:385][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20250213 09:59:52:675][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection conn0: url=jdbc:h2:~/jgo user=SA
+[20250213 09:59:52:677][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20250213 09:59:52:707][WARN ][org.hibernate.orm.deprecation] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20250213 09:59:52:733][INFO ][org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[20250213 09:59:53:733][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20250213 09:59:53:799][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20250213 09:59:54:251][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20250213 09:59:54:282][INFO ][o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name memberSecurityService
+[20250213 09:59:55:059][INFO ][o.s.b.a.h2.H2ConsoleAutoConfiguration] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/jgo'
+[20250213 09:59:55:163][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20250213 09:59:55:198][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[20250213 09:59:55:229][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[20250213 09:59:55:242][INFO ][com.mysite.jgo.JgoApplication] Started JgoApplication in 6.23 seconds (process running for 7.117)
+[20250213 09:59:58:897][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[20250213 09:59:58:897][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[20250213 09:59:58:899][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 2 ms
+[20250213 10:05:13:578][INFO ][o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] Application shutdown requested.
+[20250213 10:05:13:582][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+[20250213 10:05:13:583][INFO ][o.apache.coyote.http11.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-8080"]
+[20250213 10:05:13:591][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+[20250213 10:05:13:592][INFO ][o.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[20250213 10:05:13:598][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[20250213 10:05:13:605][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[20250213 10:05:13:607][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[20250213 10:15:28:489][INFO ][o.h.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+[20250213 10:15:28:552][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 1148 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250213 10:15:28:554][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250213 10:15:28:880][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20250213 10:15:28:881][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20250213 10:15:29:697][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250213 10:15:29:762][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interface.
+[20250213 10:15:30:492][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[20250213 10:15:30:507][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[20250213 10:15:30:509][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20250213 10:15:30:510][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.34]
+[20250213 10:15:30:576][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20250213 10:15:30:577][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1695 ms
+[20250213 10:15:30:785][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20250213 10:15:30:857][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.5.Final
+[20250213 10:15:30:897][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20250213 10:15:31:232][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20250213 10:15:31:267][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20250213 10:15:31:535][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection conn0: url=jdbc:h2:~/jgo user=SA
+[20250213 10:15:31:538][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20250213 10:15:31:576][WARN ][org.hibernate.orm.deprecation] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20250213 10:15:31:612][INFO ][org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[20250213 10:15:32:597][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20250213 10:15:32:659][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20250213 10:15:33:114][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20250213 10:15:33:150][INFO ][o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name memberSecurityService
+[20250213 10:15:33:914][INFO ][o.s.b.a.h2.H2ConsoleAutoConfiguration] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/jgo'
+[20250213 10:15:34:019][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20250213 10:15:34:044][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[20250213 10:15:34:067][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[20250213 10:15:34:077][INFO ][com.mysite.jgo.JgoApplication] Started JgoApplication in 6.193 seconds (process running for 7.088)
+[20250213 10:15:43:522][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[20250213 10:15:43:523][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[20250213 10:15:43:524][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+[20250213 10:19:21:177][INFO ][o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] Application shutdown requested.
+[20250213 10:19:21:181][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+[20250213 10:19:21:182][INFO ][o.apache.coyote.http11.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-8080"]
+[20250213 10:19:21:190][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+[20250213 10:19:21:191][INFO ][o.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[20250213 10:19:21:197][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[20250213 10:19:21:201][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[20250213 10:19:21:205][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[20250213 10:40:16:502][INFO ][o.h.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+[20250213 10:40:16:555][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 588 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250213 10:40:16:557][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250213 10:40:16:851][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20250213 10:40:16:851][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20250213 10:40:17:658][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250213 10:40:17:722][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interface.
+[20250213 10:40:18:428][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[20250213 10:40:18:443][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[20250213 10:40:18:446][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20250213 10:40:18:447][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.34]
+[20250213 10:40:18:510][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20250213 10:40:18:510][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1658 ms
+[20250213 10:40:18:713][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20250213 10:40:18:781][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.5.Final
+[20250213 10:40:18:820][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20250213 10:40:19:174][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20250213 10:40:19:213][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20250213 10:40:19:493][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection conn0: url=jdbc:h2:~/jgo user=SA
+[20250213 10:40:19:495][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20250213 10:40:19:523][WARN ][org.hibernate.orm.deprecation] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20250213 10:40:19:547][INFO ][org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[20250213 10:40:20:492][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20250213 10:40:20:593][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20250213 10:40:21:017][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20250213 10:40:21:049][INFO ][o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name memberSecurityService
+[20250213 10:40:21:728][INFO ][o.s.b.a.h2.H2ConsoleAutoConfiguration] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/jgo'
+[20250213 10:40:21:814][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20250213 10:40:21:840][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[20250213 10:40:21:862][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[20250213 10:40:21:871][INFO ][com.mysite.jgo.JgoApplication] Started JgoApplication in 5.931 seconds (process running for 6.874)
+[20250213 10:40:31:071][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[20250213 10:40:31:071][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[20250213 10:40:31:073][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 2 ms
+[20250213 10:43:33:007][INFO ][o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] Application shutdown requested.
+[20250213 10:43:33:012][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+[20250213 10:43:33:014][INFO ][o.apache.coyote.http11.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-8080"]
+[20250213 10:43:33:024][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+[20250213 10:43:33:025][INFO ][o.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[20250213 10:43:33:030][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[20250213 10:43:33:035][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[20250213 10:43:33:037][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[20250213 10:52:03:110][INFO ][o.h.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+[20250213 10:52:03:166][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 7584 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250213 10:52:03:167][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250213 10:52:03:456][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20250213 10:52:03:456][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20250213 10:52:04:252][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250213 10:52:04:316][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
+[20250213 10:52:05:035][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[20250213 10:52:05:050][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[20250213 10:52:05:052][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20250213 10:52:05:053][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.34]
+[20250213 10:52:05:112][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20250213 10:52:05:113][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1655 ms
+[20250213 10:52:05:329][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20250213 10:52:05:401][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.5.Final
+[20250213 10:52:05:443][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20250213 10:52:05:768][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20250213 10:52:05:803][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20250213 10:52:06:063][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection conn0: url=jdbc:h2:~/jgo user=SA
+[20250213 10:52:06:066][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20250213 10:52:06:094][WARN ][org.hibernate.orm.deprecation] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20250213 10:52:06:118][INFO ][org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[20250213 10:52:07:061][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20250213 10:52:07:124][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20250213 10:52:07:543][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20250213 10:52:07:573][INFO ][o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name memberSecurityService
+[20250213 10:52:08:251][INFO ][o.s.b.a.h2.H2ConsoleAutoConfiguration] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/jgo'
+[20250213 10:52:08:335][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20250213 10:52:08:362][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[20250213 10:52:08:384][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[20250213 10:52:08:394][INFO ][com.mysite.jgo.JgoApplication] Started JgoApplication in 5.837 seconds (process running for 6.709)
+[20250213 10:52:16:843][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[20250213 10:52:16:843][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[20250213 10:52:16:845][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+[20250213 10:56:02:239][INFO ][o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[20250213 10:56:02:251][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+[20250213 10:56:02:254][INFO ][o.apache.coyote.http11.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-8080"]
+[20250213 10:56:02:269][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+[20250213 10:56:02:270][INFO ][o.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[20250213 10:56:02:280][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[20250213 10:56:02:286][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[20250213 10:56:02:290][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[20250213 10:56:02:430][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 7584 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250213 10:56:02:430][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250213 10:56:06:760][INFO ][o.h.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+[20250213 10:56:06:810][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 11712 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250213 10:56:06:811][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250213 10:56:07:103][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20250213 10:56:07:103][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20250213 10:56:07:915][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250213 10:56:07:984][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+[20250213 10:56:08:707][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[20250213 10:56:08:723][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[20250213 10:56:08:725][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20250213 10:56:08:726][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.34]
+[20250213 10:56:08:788][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20250213 10:56:08:788][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1684 ms
+[20250213 10:56:09:019][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20250213 10:56:09:098][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.5.Final
+[20250213 10:56:09:154][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20250213 10:56:09:472][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20250213 10:56:09:512][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20250213 10:56:09:785][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection conn0: url=jdbc:h2:~/jgo user=SA
+[20250213 10:56:09:787][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20250213 10:56:09:815][WARN ][org.hibernate.orm.deprecation] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20250213 10:56:09:838][INFO ][org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[20250213 10:56:10:765][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20250213 10:56:10:826][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20250213 10:56:11:246][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20250213 10:56:11:277][INFO ][o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name memberSecurityService
+[20250213 10:56:11:939][INFO ][o.s.b.a.h2.H2ConsoleAutoConfiguration] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/jgo'
+[20250213 10:56:12:019][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20250213 10:56:12:043][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[20250213 10:56:12:065][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[20250213 10:56:12:075][INFO ][com.mysite.jgo.JgoApplication] Started JgoApplication in 5.887 seconds (process running for 6.745)
+[20250213 10:56:20:498][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[20250213 10:56:20:498][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[20250213 10:56:20:501][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 3 ms
+[20250213 10:57:15:557][INFO ][o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] Application shutdown requested.
+[20250213 10:57:15:561][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+[20250213 10:57:15:562][INFO ][o.apache.coyote.http11.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-8080"]
+[20250213 10:57:15:569][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+[20250213 10:57:15:570][INFO ][o.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[20250213 10:57:15:576][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[20250213 10:57:15:580][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[20250213 10:57:15:615][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[20250213 11:02:44:170][INFO ][o.h.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+[20250213 11:02:44:226][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 7396 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250213 11:02:44:227][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250213 11:02:44:505][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20250213 11:02:44:505][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20250213 11:02:45:304][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250213 11:02:45:372][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interface.
+[20250213 11:02:46:092][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[20250213 11:02:46:106][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[20250213 11:02:46:109][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20250213 11:02:46:111][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.34]
+[20250213 11:02:46:174][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20250213 11:02:46:174][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1668 ms
+[20250213 11:02:46:392][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20250213 11:02:46:459][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.5.Final
+[20250213 11:02:46:505][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20250213 11:02:46:822][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20250213 11:02:46:855][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20250213 11:02:47:116][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection conn0: url=jdbc:h2:~/jgo user=SA
+[20250213 11:02:47:119][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20250213 11:02:47:148][WARN ][org.hibernate.orm.deprecation] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20250213 11:02:47:171][INFO ][org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[20250213 11:02:48:107][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20250213 11:02:48:168][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20250213 11:02:48:581][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20250213 11:02:48:611][INFO ][o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name memberSecurityService
+[20250213 11:02:49:576][INFO ][o.s.b.a.h2.H2ConsoleAutoConfiguration] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/jgo'
+[20250213 11:02:49:678][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20250213 11:02:49:705][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[20250213 11:02:49:730][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[20250213 11:02:49:740][INFO ][com.mysite.jgo.JgoApplication] Started JgoApplication in 6.144 seconds (process running for 7.111)
+[20250213 11:02:57:606][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[20250213 11:02:57:607][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[20250213 11:02:57:612][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 4 ms
+[20250213 11:07:51:681][INFO ][o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] Application shutdown requested.
+[20250213 11:07:51:685][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+[20250213 11:07:51:687][INFO ][o.apache.coyote.http11.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-8080"]
+[20250213 11:07:51:694][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+[20250213 11:07:51:696][INFO ][o.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[20250213 11:07:51:702][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[20250213 11:07:51:706][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[20250213 11:07:51:708][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[20250213 11:07:56:089][INFO ][o.h.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+[20250213 11:07:56:144][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 6508 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250213 11:07:56:145][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250213 11:07:56:432][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20250213 11:07:56:433][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20250213 11:07:57:252][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250213 11:07:57:327][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interface.
+[20250213 11:07:58:048][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[20250213 11:07:58:063][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[20250213 11:07:58:066][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20250213 11:07:58:067][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.34]
+[20250213 11:07:58:127][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20250213 11:07:58:127][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1694 ms
+[20250213 11:07:58:356][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20250213 11:07:58:423][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.5.Final
+[20250213 11:07:58:471][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20250213 11:07:58:790][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20250213 11:07:58:827][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20250213 11:07:59:088][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection conn0: url=jdbc:h2:~/jgo user=SA
+[20250213 11:07:59:090][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20250213 11:07:59:118][WARN ][org.hibernate.orm.deprecation] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20250213 11:07:59:145][INFO ][org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[20250213 11:08:00:146][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20250213 11:08:00:230][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20250213 11:08:00:684][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20250213 11:08:00:716][INFO ][o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name memberSecurityService
+[20250213 11:08:01:423][INFO ][o.s.b.a.h2.H2ConsoleAutoConfiguration] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/jgo'
+[20250213 11:08:01:513][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20250213 11:08:01:542][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[20250213 11:08:01:564][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[20250213 11:08:01:577][INFO ][com.mysite.jgo.JgoApplication] Started JgoApplication in 6.035 seconds (process running for 6.926)
+[20250213 11:08:08:440][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[20250213 11:08:08:441][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[20250213 11:08:08:443][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+[20250213 11:09:26:028][INFO ][o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] Application shutdown requested.
+[20250213 11:09:26:031][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+[20250213 11:09:26:035][INFO ][o.apache.coyote.http11.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-8080"]
+[20250213 11:09:26:049][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+[20250213 11:09:26:052][INFO ][o.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[20250213 11:09:26:064][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[20250213 11:09:26:069][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[20250213 11:09:26:073][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[20250213 14:54:33:108][INFO ][o.h.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+[20250213 14:54:33:176][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 10324 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250213 14:54:33:178][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250213 14:54:33:508][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20250213 14:54:33:508][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20250213 14:54:34:562][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250213 14:54:34:638][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interface.
+[20250213 14:54:35:428][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[20250213 14:54:35:444][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[20250213 14:54:35:447][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20250213 14:54:35:447][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.34]
+[20250213 14:54:35:513][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20250213 14:54:35:514][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 2005 ms
+[20250213 14:54:35:751][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20250213 14:54:35:841][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.5.Final
+[20250213 14:54:35:889][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20250213 14:54:36:268][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20250213 14:54:36:312][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20250213 14:54:36:650][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection conn0: url=jdbc:h2:~/jgo user=SA
+[20250213 14:54:36:653][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20250213 14:54:36:688][WARN ][org.hibernate.orm.deprecation] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20250213 14:54:36:714][INFO ][org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[20250213 14:54:37:771][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20250213 14:54:37:842][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20250213 14:54:38:298][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20250213 14:54:38:329][INFO ][o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name memberSecurityService
+[20250213 14:54:39:079][INFO ][o.s.b.a.h2.H2ConsoleAutoConfiguration] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/jgo'
+[20250213 14:54:39:169][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20250213 14:54:39:197][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[20250213 14:54:39:221][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[20250213 14:54:39:232][INFO ][com.mysite.jgo.JgoApplication] Started JgoApplication in 6.834 seconds (process running for 8.524)
+[20250213 14:54:46:757][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[20250213 14:54:46:757][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[20250213 14:54:46:759][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 2 ms
+[20250213 15:06:35:768][INFO ][o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] Application shutdown requested.
+[20250213 15:06:35:775][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+[20250213 15:06:35:777][INFO ][o.apache.coyote.http11.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-8080"]
+[20250213 15:06:35:785][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+[20250213 15:06:35:786][INFO ][o.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[20250213 15:06:35:794][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[20250213 15:06:35:799][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[20250213 15:06:35:838][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[20250213 15:08:45:076][INFO ][o.h.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+[20250213 15:08:45:127][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 8288 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250213 15:08:45:128][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250213 15:08:45:412][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20250213 15:08:45:413][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20250213 15:08:46:247][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250213 15:08:46:315][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interface.
+[20250213 15:08:47:106][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[20250213 15:08:47:122][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[20250213 15:08:47:125][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20250213 15:08:47:125][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.34]
+[20250213 15:08:47:189][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20250213 15:08:47:190][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1775 ms
+[20250213 15:08:47:395][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20250213 15:08:47:480][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.5.Final
+[20250213 15:08:47:534][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20250213 15:08:47:933][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20250213 15:08:47:970][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20250213 15:08:48:233][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection conn0: url=jdbc:h2:~/jgo user=SA
+[20250213 15:08:48:235][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20250213 15:08:48:262][WARN ][org.hibernate.orm.deprecation] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20250213 15:08:48:287][INFO ][org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[20250213 15:08:49:240][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20250213 15:08:49:306][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20250213 15:08:49:747][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20250213 15:08:49:779][INFO ][o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name memberSecurityService
+[20250213 15:08:50:477][INFO ][o.s.b.a.h2.H2ConsoleAutoConfiguration] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/jgo'
+[20250213 15:08:50:637][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20250213 15:08:50:677][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[20250213 15:08:50:703][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[20250213 15:08:50:719][INFO ][com.mysite.jgo.JgoApplication] Started JgoApplication in 6.208 seconds (process running for 7.076)
+[20250213 15:08:59:664][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[20250213 15:08:59:665][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[20250213 15:08:59:667][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 2 ms
+[20250213 15:13:05:105][INFO ][o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[20250213 15:13:05:118][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+[20250213 15:13:05:120][INFO ][o.apache.coyote.http11.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-8080"]
+[20250213 15:13:05:132][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+[20250213 15:13:05:132][INFO ][o.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[20250213 15:13:05:141][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[20250213 15:13:05:148][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[20250213 15:13:05:190][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[20250213 15:13:05:310][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 8288 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250213 15:13:05:310][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250213 15:13:05:694][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250213 15:13:05:706][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+[20250213 15:13:05:907][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[20250213 15:13:05:910][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[20250213 15:13:05:911][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20250213 15:13:05:911][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.34]
+[20250213 15:13:05:939][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20250213 15:13:05:939][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 620 ms
+[20250213 15:13:06:047][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20250213 15:13:06:051][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20250213 15:13:06:067][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20250213 15:13:06:069][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-2 - Starting...
+[20250213 15:13:06:094][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-2 - Added connection conn10: url=jdbc:h2:~/jgo user=SA
+[20250213 15:13:06:095][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-2 - Start completed.
+[20250213 15:13:06:097][WARN ][org.hibernate.orm.deprecation] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20250213 15:13:06:098][INFO ][org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[20250213 15:13:06:161][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20250213 15:13:06:163][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20250213 15:13:06:280][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20250213 15:13:06:295][INFO ][o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name memberSecurityService
+[20250213 15:13:06:574][INFO ][o.s.b.a.h2.H2ConsoleAutoConfiguration] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/jgo'
+[20250213 15:13:06:618][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20250213 15:13:06:633][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[20250213 15:13:06:637][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[20250213 15:13:06:649][INFO ][com.mysite.jgo.JgoApplication] Started JgoApplication in 1.383 seconds (process running for 263.006)
+[20250213 15:13:06:655][INFO ][o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
+[20250213 15:13:45:379][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[20250213 15:13:45:380][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[20250213 15:13:45:383][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 3 ms
+[20250213 15:50:07:857][INFO ][o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] Application shutdown requested.
+[20250213 15:50:07:860][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+[20250213 15:50:07:861][INFO ][o.apache.coyote.http11.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-8080"]
+[20250213 15:50:07:865][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+[20250213 15:50:07:866][INFO ][o.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[20250213 15:50:07:869][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[20250213 15:50:07:870][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-2 - Shutdown initiated...
+[20250213 15:50:07:922][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-2 - Shutdown completed.
+[20250213 15:50:13:627][INFO ][o.h.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+[20250213 15:50:13:685][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 2308 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250213 15:50:13:686][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250213 15:50:14:004][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20250213 15:50:14:005][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20250213 15:50:14:989][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250213 15:50:15:063][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface.
+[20250213 15:50:15:799][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[20250213 15:50:15:817][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[20250213 15:50:15:820][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20250213 15:50:15:820][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.34]
+[20250213 15:50:15:893][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20250213 15:50:15:893][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1887 ms
+[20250213 15:50:16:119][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20250213 15:50:16:208][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.5.Final
+[20250213 15:50:16:259][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20250213 15:50:16:640][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20250213 15:50:16:680][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20250213 15:50:16:973][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection conn0: url=jdbc:h2:~/jgo user=SA
+[20250213 15:50:16:975][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20250213 15:50:17:010][WARN ][org.hibernate.orm.deprecation] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20250213 15:50:17:037][INFO ][org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[20250213 15:50:18:068][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20250213 15:50:18:135][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20250213 15:50:18:592][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20250213 15:50:18:624][INFO ][o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name memberSecurityService
+[20250213 15:50:19:336][INFO ][o.s.b.a.h2.H2ConsoleAutoConfiguration] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/jgo'
+[20250213 15:50:19:423][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20250213 15:50:19:448][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[20250213 15:50:19:474][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[20250213 15:50:19:487][INFO ][com.mysite.jgo.JgoApplication] Started JgoApplication in 6.442 seconds (process running for 7.308)
+[20250213 15:50:27:764][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[20250213 15:50:27:764][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[20250213 15:50:27:769][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 5 ms
+[20250213 16:11:40:452][INFO ][o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] Application shutdown requested.
+[20250213 16:11:40:456][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+[20250213 16:11:40:457][INFO ][o.apache.coyote.http11.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-8080"]
+[20250213 16:11:40:465][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+[20250213 16:11:40:466][INFO ][o.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[20250213 16:11:40:473][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[20250213 16:11:40:478][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[20250213 16:11:40:518][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[20250213 16:12:30:094][INFO ][o.h.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+[20250213 16:12:30:146][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 13192 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250213 16:12:30:148][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250213 16:12:30:435][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20250213 16:12:30:435][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20250213 16:12:31:408][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250213 16:12:31:476][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interface.
+[20250213 16:12:32:279][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[20250213 16:12:32:296][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[20250213 16:12:32:300][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20250213 16:12:32:301][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.34]
+[20250213 16:12:32:371][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20250213 16:12:32:372][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1935 ms
+[20250213 16:12:32:607][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20250213 16:12:32:678][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.5.Final
+[20250213 16:12:32:719][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20250213 16:12:33:051][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20250213 16:12:33:084][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20250213 16:12:33:346][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection conn0: url=jdbc:h2:~/jgo user=SA
+[20250213 16:12:33:349][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20250213 16:12:33:377][WARN ][org.hibernate.orm.deprecation] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20250213 16:12:33:400][INFO ][org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[20250213 16:12:34:370][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20250213 16:12:34:429][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20250213 16:12:34:846][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20250213 16:12:34:878][INFO ][o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name memberSecurityService
+[20250213 16:12:35:553][INFO ][o.s.b.a.h2.H2ConsoleAutoConfiguration] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/jgo'
+[20250213 16:12:35:738][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20250213 16:12:35:784][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[20250213 16:12:35:808][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[20250213 16:12:35:820][INFO ][com.mysite.jgo.JgoApplication] Started JgoApplication in 6.287 seconds (process running for 7.163)
+[20250213 16:14:26:118][INFO ][o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] Application shutdown requested.
+[20250213 16:14:26:122][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+[20250213 16:14:26:123][INFO ][o.apache.coyote.http11.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-8080"]
+[20250213 16:14:26:130][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+[20250213 16:14:26:131][INFO ][o.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[20250213 16:14:26:135][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[20250213 16:14:26:141][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[20250213 16:14:26:180][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[20250213 16:14:33:309][INFO ][o.h.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+[20250213 16:14:33:357][INFO ][com.mysite.jgo.JgoApplication] Starting JgoApplication using Java 21.0.5 with PID 12876 (C:\Users\HKIT\springboot-workspace\jgo\bin\main started by HKIT in C:\Users\HKIT\springboot-workspace\jgo)
+[20250213 16:14:33:358][INFO ][com.mysite.jgo.JgoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250213 16:14:33:648][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20250213 16:14:33:649][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20250213 16:14:34:459][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250213 16:14:34:523][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+[20250213 16:14:35:247][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[20250213 16:14:35:262][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[20250213 16:14:35:265][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20250213 16:14:35:266][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.34]
+[20250213 16:14:35:325][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20250213 16:14:35:325][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1675 ms
+[20250213 16:14:35:517][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20250213 16:14:35:587][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.5.Final
+[20250213 16:14:35:626][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20250213 16:14:35:943][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20250213 16:14:35:979][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20250213 16:14:36:240][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection conn0: url=jdbc:h2:~/jgo user=SA
+[20250213 16:14:36:242][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20250213 16:14:36:269][WARN ][org.hibernate.orm.deprecation] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20250213 16:14:36:293][INFO ][org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[20250213 16:14:37:218][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20250213 16:14:37:287][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20250213 16:14:37:704][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20250213 16:14:37:743][INFO ][o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name memberSecurityService
+[20250213 16:14:38:411][INFO ][o.s.b.a.h2.H2ConsoleAutoConfiguration] H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/jgo'
+[20250213 16:14:38:491][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20250213 16:14:38:518][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[20250213 16:14:38:540][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[20250213 16:14:38:550][INFO ][com.mysite.jgo.JgoApplication] Started JgoApplication in 5.793 seconds (process running for 6.657)
+[20250213 16:14:46:694][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[20250213 16:14:46:694][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[20250213 16:14:46:696][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 2 ms
+[20250213 16:42:53:198][INFO ][o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] Application shutdown requested.
+[20250213 16:42:53:205][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+[20250213 16:42:53:208][INFO ][o.apache.coyote.http11.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-8080"]
+[20250213 16:42:53:216][INFO ][o.s.b.w.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+[20250213 16:42:53:217][INFO ][o.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[20250213 16:42:53:223][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[20250213 16:42:53:227][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[20250213 16:42:53:259][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.

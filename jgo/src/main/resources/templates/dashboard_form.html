@@ -1,0 +1,71 @@
+<html layout:decorate="~{layout}">
+<div layout:fragment="content" class="container">
+    <h5 class="my-3 border-bottom pb-2">게시글등록</h5>
+    <form th:object="${dashboardForm}" method="post">
+      <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+   <div th:replace="~{form_errors :: formErrorsFragment}"></div>
+      <!-- 판매, 구매글 버튼 시작-->
+      <div class="btn-group" role="group">
+          <input type="radio" class="btn-check" name="type" id="sell" value="0" autocomplete="off" checked>
+          <label class="btn btn-outline-primary" for="sell">판매글</label>
+
+          <input type="radio" class="btn-check" name="type" id="buy" value="1" autocomplete="off">
+          <label class="btn btn-outline-primary" for="buy">구매글</label>
+      </div>
+      <!-- 판매, 구매글 버튼 끝 -->
+        <div class="mb-3">
+            <label for="subject" class="form-label">제목</label>
+            <input type="text"  class="form-control" th:field="*{subject}">
+        </div>
+      
+        <div class="mb-3">
+            <label for="content" class="form-label">내용</label>
+            <textarea  class="form-control" rows="5" th:field="*{content}"></textarea>
+        </div>
+      
+      <div class="mb-3" id="pPriceField">
+         <label for="pPrice" class="form-label">가격</label>
+         <input type="number"  class="form-control" th:field="*{pPrice}">
+      </div>
+      
+      <label class="form-label" id="pCategoryLabel">분류</label>
+      <select class="form-select" aria-label="Default select example" th:field="*{pCategory}" id="pCategoryField">
+         
+        <option value="">-</option>
+        <option value="의류">의류</option>
+        <option value="가전">가전</option>
+        <option value="반려동물용품">반려동물용품</option>
+      </select>
+      <!-- 이미지 업로드 -->
+      <div class="mb-3" id="imageUploadField">
+        <label for="formFile" class="form-label">사진 업로드</label>
+        <input class="form-control" type="file" id="formFile" name="fileName">
+       </div>
+   
+        <input type="submit" value="등록하기" class="btn btn-primary my-2">
+    </form>
+
+</div>
+<!-- 판매,구매글 토글 JS 시작 -->
+<script layout:fragment="script" type="text/javascript">
+const sell = document.getElementById("sell");
+const buy = document.getElementById("buy");
+const pPriceField = document.getElementById("pPriceField");
+const pPrice = document.getElementById("pPrice");
+const imageUploadField = document.getElementById("imageUploadField");
+
+function toggleOffElements(){
+	pPriceField.style.display = "none";
+	pPrice.value = 0;
+	imageUploadField.style.display = "none";
+}
+function toggleOnElements(){
+	pPriceField.style.display = "";
+	pPrice.value = null;
+	imageUploadField.style.display = "";
+}
+sell.addEventListener("click", toggleOnElements);
+buy.addEventListener("click", toggleOffElements);
+</script>
+<!-- 판매, 구매글 토글 JS 끝 -->
+</html>
